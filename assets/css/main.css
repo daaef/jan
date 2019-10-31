@@ -1,0 +1,393 @@
+/* ----------------------------------
+
+Name: main.css
+Version: 1.0
+
+-------------------------------------
+
+Table of contents
+        
+    01. Navbar
+    02. Slider
+    03. Features
+    04. Some Facts
+    05. Project
+    06. Video
+    07. Portfolio
+    08. Benifits
+    09. Team
+    10. Get Started
+    11. Testimonials
+    12. Project-2
+    13. Our Price
+    14. Clients
+    15. Contact Us
+    16. Footer
+    17. Page Loading
+    18. Media Query
+*/
+
+body {
+    font-family: 'Nunito', sans-serif;;
+}
+/*--------------------------------------------------
+[2. Start Slider]
+--------------------------------------------------*/
+.slider {
+    background: #f1f7ff;
+    height: 100vh;
+}
+.slider .content {
+    margin-top: 50px;
+}
+.slider .content .left h1 {
+    font-size: 45px;
+    font-weight: 400;
+    color: #1e3056;
+    line-height: 55px;
+    margin: 0;
+    padding: 0;
+}
+.slider .content .left p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #697ba2;
+    line-height: 26px;
+    padding: 0;
+    margin: 10px 0 30px;
+}
+.slider .content .left .btn-1 {
+    background: linear-gradient(to right, #507bf5 0%,#04c3e1 100%);
+    box-shadow: 1px 1px 30px 0 rgba(0,0,0,0.2);
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 65px;
+    padding: 10px 45px;
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-block;
+}
+.slider .content .left .btn-2 {
+    background: transparent;
+    border: 1px solid #1e3056;
+    text-decoration: none;
+    color: #1e3056;
+    border-radius: 65px;
+    padding: 10px 45px;
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/*--------------------------------------------------
+[3. Start Features]
+--------------------------------------------------*/
+.features {
+    background: url("../../Entrepreneur/img/bg/feature-bg.png") top center no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+}
+.features .heading {
+    font-size: 30px;
+    color: #3b566e;
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding: 0;
+}
+.features .line {
+    background: linear-gradient(to right, #507bf5 0%,#04c3e1 100%);
+    height: 2px;
+    width: 50px;
+    margin-bottom: 50px;
+    display: inline-block;
+}
+.features .box {
+    background: #ffffff;
+    box-shadow: 1px 1px 25px 0 rgba(0,0,0,0.05);
+    border-radius: 15px;
+    padding: 60px 30px;
+    transition: all .4s ease-in-out;
+}
+.features .box:hover {
+    transform: translateY(-15px);
+    box-shadow: 1px 1px 25px 0 rgba(0,0,0,0.09);
+}
+.features .box h3 {
+    font-size: 20px;
+    color: #3b566e;
+    font-weight: 600;
+    margin: 25px 0 15px;
+    padding: 0;
+}
+.features .box p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #919aaf;
+    line-height: 26px;
+    margin: 0;
+    padding: 0;
+}
+
+/*--------------------------------------------------
+[5. Start Project]
+--------------------------------------------------*/
+.project {
+    padding: 120px 0;
+}
+.project .right span {
+    font-size: 16px;
+    color: #557ff5;
+    font-weight: 600;
+}
+.project .right h2 {
+    font-size: 25px;
+    color: #3b566e;
+    font-weight: 600;
+    line-height: 32px;
+}
+.project .right p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #919aaf;
+    line-height: 26px;
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+.project .right .btn-1 {
+    background: linear-gradient(to right, #507bf5 0%,#04c3e1 100%);
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 65px;
+    padding: 10px 45px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/*--------------------------------------------------
+[18. Start Media Query]
+--------------------------------------------------*/
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 383.98px) {
+    .slider .content .left .btn-1 {
+        margin-bottom: 20px;
+    }
+    .slider .content .left .btn-2 {
+        margin-left: 0;
+    }
+}
+
+
+@media (max-width: 575.98px) {
+    /* Navbar */
+    .navbar {
+        padding: 15px 20px;
+    }
+    .navbar .nav-item .nav-link {
+        margin: 20px 0 10px;
+    }
+    .navbar .btn-1 {
+        margin: 20px 0;
+        display: inline-block;
+    }
+
+    /* Slider */
+    .slider {
+        height: auto;
+        padding: 120px 0;
+    }
+    .slider .content {
+        text-align: center;
+    }
+    .slider .content .left {
+        margin-bottom: 40px;
+    }
+
+    /* Features */
+    .features {
+        padding: 120px 0 90px;
+    }
+    .features .box {
+        margin-bottom: 30px;
+    }
+
+    /* Some Facts */
+    .some-facts {
+        padding: 80px 0 30px;
+    }
+    .some-facts .items {
+        margin-bottom: 50px;
+    }
+
+    /* Some Project */
+    .project .right {
+        margin-top: 40px;
+    }
+
+    /* Some Benefits */
+    .benefits {
+        padding: 120px 0 80px;
+    }
+    .benefits .box {
+        margin-bottom: 40px;
+    }
+
+    /* Our Team */
+    .our-team {
+        padding: 120px 0 90px;
+    }
+    .our-team .box {
+        margin-bottom: 30px;
+    }
+
+    /* Some Project-2 */
+    .project-2 .left {
+        margin-bottom: 40px;
+    }
+
+    /* Some Our Price */
+    .our-price {
+        padding: 120px 0 90px;
+    }
+    .our-price .box {
+        margin-bottom: 30px;
+    }
+
+    /* Some Contact Us */
+    .contact .content {
+        margin-bottom: 40px;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* Navbar */
+    .navbar {
+        padding: 15px 20px;
+    }
+    .navbar .nav-item .nav-link {
+        margin: 20px 0 10px;
+    }
+    .navbar .btn-1 {
+        margin: 20px 0;
+        display: inline-block;
+    }
+
+    /* Slider */
+    .slider {
+        height: auto;
+        padding: 120px 0;
+    }
+    .slider .content {
+        text-align: center;
+    }
+    .slider .content .left {
+        margin-bottom: 40px;
+    }
+
+    /* Features */
+    .features {
+        padding: 120px 0 90px;
+    }
+    .features .box {
+        margin-bottom: 30px;
+    }
+
+    /* Some Facts */
+    .some-facts {
+        padding: 80px 0 30px;
+    }
+    .some-facts .items {
+        margin-bottom: 50px;
+    }
+
+    /* Some Project */
+    .project .right {
+        margin-top: 40px;
+    }
+
+    /* Some Benefits */
+    .benefits {
+        padding: 120px 0 80px;
+    }
+    .benefits .box {
+        margin-bottom: 40px;
+    }
+
+    /* Our Team */
+    .our-team {
+        padding: 120px 0 90px;
+    }
+    .our-team .box {
+        margin-bottom: 30px;
+    }
+    /* Team */
+    .our-team .box .image .social-icon {
+        width: 40%;
+    }
+
+    /* Some Project-2 */
+    .project-2 .left {
+        margin-bottom: 40px;
+    }
+
+    /* Some Our Price */
+    .our-price {
+        padding: 120px 0 90px;
+    }
+    .our-price .box {
+        margin-bottom: 30px;
+    }
+
+    /* Some Contact Us */
+    .contact .content {
+        margin-bottom: 40px;
+    }
+
+}
+
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    /* Navbar */
+    .navbar {
+        padding: 15px 20px;
+    }
+    .navbar .nav-item .nav-link {
+        margin: 20px 0 10px;
+    }
+    .navbar .btn-1 {
+        margin: 20px 0;
+        display: inline-block;
+    }
+    /* Slider */
+    .slider {
+        height: auto;
+        padding: 120px 0;
+    }
+    .slider .content .left h1 {
+        font-size: 35px;
+    }
+    .slider .content .left p {
+        font-size: 15px;
+    }
+
+    /* Some Facts */
+    .some-facts {
+        padding: 80px 0 30px;
+    }
+    .some-facts .items {
+        margin-bottom: 50px;
+    }
+
+    /* Team */
+    .our-team .box .image .social-icon {
+        width: 70%;
+    }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
